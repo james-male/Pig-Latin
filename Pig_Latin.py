@@ -1,11 +1,13 @@
-print 'Welcome to the Pig Latin Translator!'
+print 'Welcome to the Pig Latin Translator!'  
+pyg = 'ay'
 
-# Start coding here!
-print "Pig Latin"
+original = raw_input('Enter a word: ')
 
-original = raw_input("Enter a word: ")
-
-if len(original) > 0:
-  print original
+if len(original) > 0 and original.isalpha():
+  word = original.lower()
+  first = word[0]
+  new_word = word[1:len(new_word)] + first + pyg
+  
+  print new_word
 else:
-  print "empty"
+    print 'You either didnt enter anything or did not enter a text only value'
